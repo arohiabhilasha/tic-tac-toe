@@ -1,5 +1,6 @@
 {
   "homepage": "http://arohiabhilasha.github.io/tic-tac-toe",
+  "proxy": "http://localhost:3000",
   "name": "tic-tac-toe",
   "version": "0.1.0",
   "private": true,

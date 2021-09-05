@@ -1,30 +1,30 @@
 //react class based component - rcc
 import React, { Component } from 'react';
-import square from './square';
+import Square from './square';
 
-export default class board extends Component {
+export default class Board extends Component {
     renderSquare(i){
-        return <square value ={this.props.square[i]}
+        return <Square value ={this.props.squares[i]}
         onClick = {() => this.props.onClick(i)}
         />
     }
     render() {
         return (
             <div>
-                <div classNam="border-row">
-                    {this.render.square(0)}
-                    {this.render.square(1)}
-                    {this.render.square(2)}
+                <div className="border-row">
+                    {this.renderSquare(0)}  
+                    {this.renderSquare(1)}
+                    {this.renderSquare(2)}
                 </div>
-                <div classNam="border-row">
-                    {this.render.square(3)}
-                    {this.render.square(4)}
-                    {this.render.square(5)}
+                <div className="border-row">
+                    {this.renderSquare(3)}
+                    {this.renderSquare(4)}
+                    {this.renderSquare(5)}
                 </div>
-                <div classNam="border-row">
-                    {this.render.square(6)}
-                    {this.render.square(7)}
-                    {this.render.square(8)}
+                <div className="border-row">
+                    {this.renderSquare(6)}
+                    {this.renderSquare(7)}
+                    {this.renderSquare(8)}
                 </div>
                 
             </div>
